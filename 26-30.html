@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Videos | Programming AI</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  display:flex;
+  min-height:100vh;
+  background:#f4f6f9;
+}
+
+/* Sidebar */
+.sidebar{
+  width:220px;
+  background:#1e1e2f;
+  color:white;
+  padding:20px;
+}
+
+.sidebar h3{
+  text-align:center;
+  margin-bottom:15px;
+}
+
+.sidebar a{
+  display:block;
+  padding:10px;
+  margin:6px 0;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+}
+
+.sidebar a:hover{
+  background:#3b3b5c;
+}
+
+/* Main */
+.main{
+  flex:1;
+  padding:20px;
+}
+
+/* Header */
+header{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+header h1{
+  font-size:30px;
+  color:#1e1e2f;
+}
+
+header h2{
+  font-size:16px;
+  color:#555;
+}
+
+/* Video cards */
+.videos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card video{
+  width:100%;
+  border-radius:8px;
+}
+
+.card h4{
+  margin-top:10px;
+}
+.video-wrapper{
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-wrapper iframe,
+.video-wrapper video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media (min-width:769px){
+  .sidebar a{
+    transition:all 0.25s ease;
+  }
+
+  .sidebar a:hover{
+    transform:translateX(6px);
+    background:#34345c;
+  }
+}
+@media (min-width:769px){
+  .sidebar a.active{
+    box-shadow:0 0 10px rgba(76,76,255,0.6);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h3>Categories</h3>
+  <a href="index.html">Home</a>
+  <a href="23-25.html">Back</a>
+  <a >26-30 Object-Oriented Programming:</a>
+  <a href="31-36.html">Next</a>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+  <header>
+    <h1>Python Programming</h1>
+    <h2>Theory & Practical Videos</h2>
+    <h3>Functions, recursion, local/global scope, parameter passing (*args,
+**kwargs), classes, objects, constructors, inheritance, polymorphism</h3>
+  </header>
+
+  <div class="videos">
+
+    <!-- Video 1 -->
+    <div class="card" id="intro-python">
+      <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/OvTH-7ESoRA?si=KDCKyVuK4lP-wKK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+      <h4>Functions, recursion</h4>
+    </div>
+    <div class="card" id="intro-python">
+      <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3iIq6gq_xRo?si=s51Si5RcNIF9u3JX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+      <h4>local/global scope</h4>
+    </div>
+    <div class="card" id="intro-python">
+      <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pY6mZ-RbBZg?si=asOzN12Vjj4yJZYV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+      <h4>parameter passing (*args, **kwargs)</h4>
+    </div>
+
+    <div class="card" id="intro-python">
+      <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/a7baAGCBA9U?si=GLyL96WbJU-e5EVP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+      <h4>classes, objects,</h4>
+    </div>
+
+    <div class="card" id="intro-python">
+      <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/12HRkYld22c?si=jn6idEFEZ4MObu7R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+      <h4>constructors,</h4>
+    </div>
+
+    <div class="card" id="intro-python">
+      <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4SO3sScshvA?si=K2p0pQSwgmbKxS_e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+      <h4>inheritance</h4>
+    </div>
+    <div class="card" id="intro-python">
+      <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/UPT4Q_sTOpY?si=a0UsPO7EvMQhr2HG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+      <h4>polymorphism</h4>
+    </div>
+
+  </div>
+
+</div>
+<script>
+if (location.hash) {
+  const target = document.querySelector(location.hash);
+  if (target) {
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+
+    target.style.border = "3px solid #4caf50";
+    target.style.boxShadow = "0 0 15px rgba(76,175,80,0.6)";
+
+    // optional: remove highlight after 5 seconds
+    setTimeout(() => {
+      target.style.border = "";
+      target.style.boxShadow = "";
+    }, 5000);
+  }
+}
+
+
+</script>
+</body>
+</html>
