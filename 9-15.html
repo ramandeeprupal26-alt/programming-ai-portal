@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Videos | Programming AI</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  display:flex;
+  min-height:100vh;
+  background:#f4f6f9;
+}
+
+/* Sidebar */
+.sidebar{
+  width:220px;
+  background:#1e1e2f;
+  color:white;
+  padding:20px;
+}
+
+.sidebar h3{
+  text-align:center;
+  margin-bottom:15px;
+}
+
+.sidebar a{
+  display:block;
+  padding:10px;
+  margin:6px 0;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+}
+
+.sidebar a:hover{
+  background:#3b3b5c;
+}
+
+/* Main */
+.main{
+  flex:1;
+  padding:20px;
+}
+
+/* Header */
+header{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+header h1{
+  font-size:30px;
+  color:#1e1e2f;
+}
+
+header h2{
+  font-size:16px;
+  color:#555;
+}
+
+/* Video cards */
+.videos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card video{
+  width:100%;
+  border-radius:8px;
+}
+
+.card h4{
+  margin-top:10px;
+}
+.video-wrapper{
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-wrapper iframe,
+.video-wrapper video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media (min-width:769px){
+  .sidebar a{
+    transition:all 0.25s ease;
+  }
+
+  .sidebar a:hover{
+    transform:translateX(6px);
+    background:#34345c;
+  }
+}
+@media (min-width:769px){
+  .sidebar a.active{
+    box-shadow:0 0 10px rgba(76,76,255,0.6);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h3>Categories</h3>
+  <a href="index.html">Home</a>
+  <a href="4-8.html">Back</a>
+  <a >9-15 Control Flow and Logic Building:</a>
+  <a href="16-19.html">Next</a>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+  <header>
+    <h1>Python Programming</h1>
+    <h2>Theory & Practical Videos</h2>
+    <h3>if, if-else, elseif, nested conditions, while, for loops, flow control, loop-based logic development</h3>
+  </header>
+
+  <div class="videos">
+
+    
+    <div class="card" id="intro-python">
+      <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9xiFcK3MRYA?si=OicT5okNUcjmtmxT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+      <h4>if else condition</h4>
+    </div>
+
+    <div class="card" id="intro-python">
+      <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/S73thl0AyFU?si=ddFa8M5GZm19P8SK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+      <h4>Loops</h4>
+    </div>
+
+   <div class="card" id="intro-python">
+      <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HbNfCM4ilBQ?si=-alfQ_c1idsV_ol1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+      <h4>Logics</h4>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+if (location.hash) {
+  const target = document.querySelector(location.hash);
+  if (target) {
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+
+    target.style.border = "3px solid #4caf50";
+    target.style.boxShadow = "0 0 15px rgba(76,175,80,0.6)";
+
+    // optional: remove highlight after 5 seconds
+    setTimeout(() => {
+      target.style.border = "";
+      target.style.boxShadow = "";
+    }, 5000);
+  }
+}
+
+
+</script>
+</body>
+</html>
