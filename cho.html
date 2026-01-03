@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programming AI - Video Learning</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout */
+body{
+  display:flex;
+  height:100vh;
+  background:#f4f6f9;
+}
+
+/* Sidebar */
+.sidebar{
+  width:220px;
+  background:#1e1e2f;
+  color:white;
+  padding:20px;
+}
+
+.sidebar h3{
+  margin-bottom:15px;
+  text-align:center;
+}
+
+.sidebar a{
+  display:block;
+  padding:10px;
+  margin:6px 0;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+}
+
+.sidebar a:hover{
+  background:#3b3b5c;
+}
+
+/* Main Section */
+.main{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+
+/* Header */
+.top-header{
+  background:white;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-box{
+  width:280px;
+  padding:8px;
+  border:1px solid #ccc;
+  border-radius:20px;
+  outline:none;
+}
+
+/* Content */
+.content{
+  padding:30px;
+  text-align:center;
+}
+
+/* Your required header */
+header h1{
+  font-size:32px;
+  color:#1e1e2f;
+}
+
+header h2{
+  font-size:18px;
+  color:#555;
+  margin-top:5px;
+}
+
+/* Center Image */
+.center-img{
+  margin-top:30px;
+}
+
+.center-img img{
+  max-width:90%;
+  width:400px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.pdf-box a{
+  text-decoration:none;
+  padding:8px 12px;
+  background:#1e1e2f;
+  color:white;
+  border-radius:6px;
+  margin-right:10px;
+}
+@media (min-width:769px){
+  .sidebar a{
+    transition:all 0.25s ease;
+  }
+
+  .sidebar a:hover{
+    transform:translateX(6px);
+    background:#34345c;
+  }
+}
+@media (min-width:769px){
+  .sidebar a.active{
+    box-shadow:0 0 10px rgba(76,76,255,0.6);
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar Menu -->
+<div class="sidebar">
+  <h3>Cho</h3>
+    <a href="index.html">Home</a>
+</div>
+
+<!-- Main Area -->
+<div class="main">
+  <!-- Page Content -->
+  <div class="content">
+
+    <!-- Your Required Header -->
+    <header>
+      <h1>Programming ai</h1>
+      <h2>Cho</h2>
+    </header>
+
+    <!-- Center Image -->
+    <div class="center-img">
+        <iframe 
+            src="Cho.pdf" 
+            width="100%" 
+            height="600px"
+            style="border:none;">
+        </iframe>
+
+      <div class="pdf-box">
+            <a href="Cho.pdf" download>⬇ Download PDF</a>
+        </div>
+
+    </div>
+
+  </div>
+</div>
+<script>
+if (location.hash) {
+  const target = document.querySelector(location.hash);
+  if (target) {
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+
+    target.style.border = "3px solid #4caf50";
+    target.style.boxShadow = "0 0 15px rgba(76,175,80,0.6)";
+
+    // optional: remove highlight after 5 seconds
+    setTimeout(() => {
+      target.style.border = "";
+      target.style.boxShadow = "";
+    }, 5000);
+  }
+}
+
+
+</script>
+</body>
+</html>
+
